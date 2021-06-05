@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            perspective: 300px;
+        }
+        img {
+            display: block;
+            width: 300px;
+            margin: 100px auto;
+            transition: all 1s;
+        }
+        img:hover {
+            /* transform: rotateX(45deg); */
+            transform: rotate3d(1,1,0,180deg);
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <img src="./images/狙击.jpg" alt="">
+    </div>
+</body>
+</html>

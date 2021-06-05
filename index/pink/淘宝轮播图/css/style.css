@@ -1,0 +1,62 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+a {
+    text-decoration: none;
+}
+li {
+    list-style: none;
+}
+.tb-promo {
+    position: relative;
+    width: 520px;
+    height: 280px;
+    margin: 100px auto;
+}
+.tb-promo img {
+    width: 520px;
+    height: 280px;
+}
+.prev,.next {
+    position: absolute;
+    top: 50%;
+    margin-top: -15px;
+    width: 20px;
+    height: 30px;
+    background-color: rgba(0, 0, 0, .3);
+    text-align: center;
+    line-height: 30px;
+    color: #fff;
+}
+.prev {
+    /* 加了绝对定位的盒子可以直接设置高度宽度 */
+    left: 0;
+    border-radius: 0 15px 15px 0;
+}
+.next {
+    /* 加了绝对定位的盒子可以直接设置高度宽度 */
+    right: 0;
+    border-radius: 15px 0 0 15px;
+}
+.promo-nav {
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    margin-left: -35px;
+    width: 70px;
+    height: 13px;
+    background: rgba(255, 255, 255, .3);
+    border-radius: 7px;
+}
+.promo-nav li {
+    float: left;
+    width: 8px;
+    height: 8px;
+    background-color: #fff;
+    border-radius: 50%;
+    margin: 3px;
+}
+.promo-nav .selected {
+    background-color: #ff5000;
+}

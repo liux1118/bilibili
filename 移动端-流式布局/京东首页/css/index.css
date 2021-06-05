@@ -1,0 +1,227 @@
+body {
+    width: 100%;
+    /* 最小320px 不能再缩小了 */
+    min-width: 320px;
+    /* 最大640px */
+    max-width: 640px;
+    margin: 0 auto;
+    background: #fff;
+    font-size: 14px;
+    font-family: -apple-system, Helvetica, sans-serif;
+    /* 当前字体的size的1.5倍 */
+    line-height: 1.5;
+    color: #666;
+}
+.openApp {
+    height: 45px;
+}
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+a {
+    color: #666;
+    text-decoration: none;
+    /* 点击高亮，我们需要清除 设置为transparent 完成透明 */
+    -webkit-tap-highlight-color: transparent;
+}
+.openApp ul li {
+    float: left;
+    height: 45px;
+    background-color: #333333;
+    /* 水平 垂直居中 图片也可用这种方法 */
+    text-align: center;
+    line-height: 45px;
+    color: #fcf4f4;
+}
+.openApp ul li:nth-child(1) {
+    width: 8%;
+}
+.openApp ul li:nth-child(1) img {
+    width: 10px;
+    height: 10px;
+}
+.openApp ul li:nth-child(2) {
+    width: 10%;
+}
+.openApp ul li:nth-child(2) img {
+    width: 30px;
+    height: 30px;
+    /* 文字和图片居中对齐 */
+    vertical-align: middle;
+}
+.openApp ul li:nth-child(3) {
+    width: 57%;
+}
+.openApp ul li:nth-child(4) {
+    width: 25%;
+    background-color: #F63515;
+}
+/* 搜索 */
+.search-wrap {
+    width: 100%;
+    height: 44px;
+    position: fixed;
+    /* 加了固定定位的 一定要给宽度 */
+    min-width: 320px;
+    max-width: 640px;
+    /* 父子外边距合并 */
+    overflow: hidden;
+    /* background-color: #c82519; */
+}
+.search-btn,.search-logo {
+    position: absolute;
+    top: 0;
+    width: 40px;
+    height: 44px;
+}
+.search-btn {
+    left: 0;
+}
+.search-btn::before {
+    content: '';
+    display: block;
+    width: 20px;
+    height: 18px;
+    background: url(../images/s-btn.png) no-repeat;
+    background-size: 20px 18px;
+    margin: 14px 0 0 15px;
+}
+.search-logo {
+    right: 0;
+    text-align: center;
+    line-height: 44px;
+    color: #fff;
+}
+.search {
+    position: relative;
+    height: 30px;
+    background-color: #fff;
+    margin: 0 50px;
+    margin-top: 7px;
+    border-radius: 22px;
+}
+.jd-icon {
+    position: absolute;
+    top: 8px;
+    left: 13px;
+    width: 20px;
+    height: 15px;
+    background: url(../images/jd.png) no-repeat;
+    /* 要进行缩放 */
+    background-size: 20px 15px;
+}
+.jd-icon::after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    right: -7px;
+    width: 1px;
+    height: 15px;
+    background-color: #ccc;
+}
+.sou {
+    position: absolute;
+    top: 9px;
+    left: 44px;
+    width: 18px;
+    height: 15px;
+    background: url(../images/jd-sprites.png) no-repeat -81px 0;
+    background-size: 200px auto;
+}
+/* 主体部分 */
+.slider img{
+    width: 100%;
+}
+.swiper-container {
+    width: 100%;
+    height: 100%;
+  }
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+  }
+/* 清除浮动 */
+.clearfix::after {
+    content: '';
+    display: block;
+    height: 0;
+    visibility: hidden;
+    clear: both;
+}
+.clearfix {
+    *zoom: 1;
+}
+/* 品牌日 */
+.brand {
+    overflow: hidden;
+    border-radius: 10px 10px 0 0 ;
+}
+.brand div {
+    float: left;
+    width: 33.33%;
+}
+.brand div img {
+    width: 100%;
+    vertical-align: top;
+}
+/* nav部分 */
+nav {
+    padding-top: 10px;
+}
+nav a {
+    float: left;
+    width: 20%;
+    text-align: center;
+}
+nav a img {
+    width: 40px;
+    margin: 10px 0;
+}
+nav a span {
+    display: block;
+}
+/* news模块 */
+.news {
+    margin-top: 10px;
+}
+.news a {
+    float: left;
+    /* C3盒模型 不会将margin border 算进去 */
+    box-sizing: border-box;
+}
+.news a img {
+    width: 100%;
+}
+.news a:nth-child(1) {
+    width: 50%;
+}
+/* .news a:nth-child(2) {
+    width: 25%;
+}
+.news a:nth-child(3) {
+    width: 25%;
+} */
+/* 从第二个往后选 */
+.news a:nth-child(n+2) {
+    width: 25%;
+    border-left: 1px solid #ccc;
+}

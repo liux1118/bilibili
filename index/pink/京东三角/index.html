@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>京东三角</title>
+    <style>
+        .jd {
+            position: relative;
+            width: 100px;
+            height: 200px;
+            background-color: aqua;
+            margin: 100px auto;
+        }
+        span {
+            position: absolute;
+            width: 0;
+            height: 0;
+            border: 10px solid transparent;
+            border-bottom-color: aqua;
+            top: -20px;
+            right: 15px;
+        }
+        .box {
+            margin: 10px auto;
+            width: 0;
+            height: 0;
+            /* border-top: 100px solid transparent;
+            border-right: 50px solid bisque;
+            border-bottom: 0 solid yellowgreen;
+            border-left: 0 solid palegreen; */
+            border-color: transparent palegreen transparent transparent;
+            border-style: solid;
+            border-width: 100px 50px 0 0;
+        }
+        .price {
+            width: 160px;
+            height: 24px;
+            border: 1px solid red;
+            text-align: center;
+            line-height: 24px;
+        }
+        .miaosha {
+            position: relative;
+            float: left;
+            width: 90px;
+            height: 100%;
+            background-color: red;
+            color: #fff;
+            font-weight: 700;
+        }
+        .miaosha i {
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 0;
+            height: 0;
+            border-color: transparent #fff transparent transparent;
+            border-style: solid;
+            border-width: 24px 12px 0 0;
+        }
+        .price del {
+            color: #c4c7c4;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <div class="jd">
+        <span></span>
+    </div>
+    <div class="box"></div>
+    <div class="price">
+        <div class="miaosha">
+            ￥1650
+        <!-- i标签专门做三角 -->
+        <i></i>
+        </div>
+        <del>￥3000</del>
+    </div>
+</body>
+</html>

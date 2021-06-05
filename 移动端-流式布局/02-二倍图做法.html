@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 需要一个50*50像素的图片，直接放到手机里会放大2倍 会模糊 */
+        /* 采取放一个100*100图片 再手动设置50*50  */
+        /* 准备的图片比实际需要的大两倍 这就是二倍图 */
+        /* 背景图片也是如此 但使用的是 background-size */
+        img:nth-child(2) {
+            width: 50px;
+            height: 50px;
+        }
+        div {
+            width: 50px;
+            height: 50px;
+            border: 1px solid red;
+            background: url(./images/apple100.jpg) no-repeat;
+            background-size: 50px 50px;
+        }
+    </style>
+</head>
+<body>
+    <!-- 模糊 -->
+    <img src="./images/apple50(1).jpg" alt="">
+    <!-- 清晰 -->
+    <img src="./images/apple100.jpg" alt="">
+    <div></div>
+</body>
+</html>

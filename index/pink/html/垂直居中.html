@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .one {
+            width: 200px;
+            height: 200px;
+            background-color: aqua;
+            transform: translate(100px,0);
+        }
+        /* 垂直居中 */
+        .dingwei {
+            position: relative;
+            width: 400px;
+            height: 400px;
+            background-color: aquamarine;
+        }
+        .wei {
+            position: absolute;
+            width: 200px;
+            height: 200px;
+            background-color: antiquewhite;
+            transform: translate(50%,50%);
+        }
+        .sanjiao {
+            position: relative;
+            width: 236px;
+            height: 30px;
+            border: 1px solid #000;
+        }
+        .sanjiao::after {
+            position: absolute;
+            content: "";
+            top: 5px;
+            right: 8px;
+            width: 10px;
+            height: 10px;
+            border-right: 1px solid #000;
+            border-bottom: 1px solid #000;
+            transform: rotate(45deg);
+            transition: all 0.3s;
+
+        }
+        .sanjiao:hover::after {
+            transform: rotate(225deg);
+        }
+    </style>
+</head>
+<body>
+    <div class="one"></div>
+    <div class="dingwei">
+        <div class="wei"></div>
+    </div>
+    <div class="sanjiao"></div>
+</body>
+</html>

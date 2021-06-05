@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            /* flex布局 会将行内元素转为块级 */
+            display: flex;
+            width: 80%;
+            height: 300px;
+            background-color: aqua;
+            /* justify-content: space-around; */
+            /* 垂直居中效果 两行代码 */
+            justify-content: center;
+            align-items: center;
+
+        }
+        span {
+            width: 150px;
+            height: 100px;
+            margin-left: 10px;
+            background-color: aquamarine;
+            /* 平均分成三等份 */
+            /* flex: 1; */
+
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+</body>
+</html>
